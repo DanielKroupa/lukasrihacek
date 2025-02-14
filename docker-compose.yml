@@ -1,0 +1,61 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: strapi
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - mynetwork
+
+  strapi:
+    build: ./strapi
+    container_name: strapi
+    restart: always
+    ports:
+      - "1338:1338"
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    environment:
+      - DATABASE_CLIENT=postgres
+      - DATABASE_HOST=postgres
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=strapi
+      - DATABASE_USERNAME=strapi
+      - DATABASE_PASSWORD=strapi
+      - DATABASE_SSL=false
+      - HOST=0.0.0.0
+      - PORT=1338
+    networks:
+      - mynetwork
+
+  nextjs:
+    build: ./nextjs
+    container_name: nextjs
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - strapi
+    env_file:
+      - .env
+    environment:
+      - NEXT_PUBLIC_STRAPI_URL=http://strapi:1338 # Přidáno pro správnou komunikaci
+    networks:
+      - mynetwork
+
+volumes:
+  db-data:
+
+networks:
+  mynetwork:

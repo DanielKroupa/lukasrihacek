@@ -1,0 +1,25 @@
+# Použijme oficiální Node.js image
+FROM node:18-alpine AS builder
+
+# Nastavení pracovního adresáře v kontejneru
+WORKDIR /app
+
+# Zkopíruj package.json a nainstaluj závislosti
+COPY package.json package-lock.json ./
+RUN npm install --force
+
+# Zkopíruj celý Next.js projekt a vytvoř build
+COPY . .
+RUN npm run build
+
+# Použijme menší image pro běh aplikace
+FROM node:18-alpine AS runner
+WORKDIR /app
+
+# Zkopíruj buildnutý projekt
+COPY --from=builder /app ./
+
+# Spusť aplikaci
+# CMD ["npm", "start"]
+
+CMD ["npm", "run", "start"]
