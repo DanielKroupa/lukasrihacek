@@ -31,7 +31,7 @@ Tato webová aplikace slouží jako moderní prezentační platforma pro Lukáš
 ### Backend
 
 - [Strapi CMS](https://strapi.io/) – headless CMS pro správu obsahu
-- REST API (možno rozšířit o GraphQL)
+- REST API
 
 ---
 
