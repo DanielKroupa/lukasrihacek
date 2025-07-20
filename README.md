@@ -1,25 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LukášŘiháček.cz – Prezentační web psychologických služeb
 
-## Getting Started
+Tato webová aplikace slouží jako moderní prezentační platforma pro Lukáše Řiháčka, který poskytuje psychologické služby. Cílem je nabídnout přehledné informace o službách, zkušenostech a možnostech kontaktu pro potenciální klienty.
 
-First, run the development server:
+---
+
+## 🌐 Live ukázka
+
+> `https://lukasrihacek.cz`
+
+---
+
+## 🧠 Funkce
+
+- Prezentační obsah (o mně, nabídka služeb, ceník)
+- Možnost kontaktu prostřednictvím formuláře
+- Responzivní design optimalizovaný pro mobilní zařízení
+- Admin rozhraní pro správu obsahu (přes Strapi)
+
+---
+
+## 🛠 Použité technologie
+
+### Frontend
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- HTML5
+
+### Backend
+
+- [Strapi CMS](https://strapi.io/) – headless CMS pro správu obsahu
+- REST API (možno rozšířit o GraphQL)
+
+---
+
+## 🚀 Spuštění projektu lokálně
+
+### 🔧 Požadavky
+
+- Node.js (doporučeno 18+)
+- Yarn nebo npm
+- Git
+
+### 📁 Struktura
+
+/projekt/
+├── frontend/
+└──── backend/ # Strapi backend
+
+### 1. Klonování repozitáře
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/DanielKroupa/lukasrihacek.git
+cd lukasrihacek
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Spuštění frontend části
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- npm install # nebo yarn
+- npm run dev # spuštění frontend serveru
 
-## Deploy on Vercel
+### 3. Spuštění backend části
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- cd backend # nebo yarn
+- npm run develop # spuštění frontend serveru ve vývojářském režimu
