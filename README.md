@@ -58,10 +58,14 @@ cd lukasrihacek
 
 ### 2. Spuštění frontend části
 
-- npm install # nebo yarn
-- npm run dev # spuštění frontend serveru
+```bash
+ npm install # nebo yarn install
+ npm run dev # spuštění frontend serveru
+```
 
 ### 3. Spuštění backend části
 
-- cd backend # nebo yarn
-- npm run develop # spuštění frontend serveru ve vývojářském režimu
+```bash
+cd backend # nebo yarn
+npm run develop # spuštění frontend serveru ve vývojářském režimu
+```
