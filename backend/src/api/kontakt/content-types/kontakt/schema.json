@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kontakts",
+  "info": {
+    "singularName": "kontakt",
+    "pluralName": "kontakts",
+    "displayName": "Kontakt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "popis": {
+      "type": "string"
+    },
+    "popisTelefon": {
+      "type": "string"
+    },
+    "popisEmail": {
+      "type": "string"
+    },
+    "telefon": {
+      "default": 0,
+      "type": "integer"
+    }
+  }
+}

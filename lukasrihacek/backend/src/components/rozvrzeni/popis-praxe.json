@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_rozvrzeni_popis_praxes",
+  "info": {
+    "displayName": "Popis Praxe",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "popis": {
+      "type": "text"
+    },
+    "rok": {
+      "type": "string"
+    }
+  }
+}

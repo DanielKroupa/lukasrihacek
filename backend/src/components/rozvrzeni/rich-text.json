@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_rozvrzeni_rich_texts",
+  "info": {
+    "displayName": "RichText",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "richText": {
+      "type": "blocks"
+    }
+  }
+}

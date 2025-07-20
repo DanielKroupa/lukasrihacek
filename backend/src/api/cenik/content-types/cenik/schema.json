@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ceniks",
+  "info": {
+    "singularName": "cenik",
+    "pluralName": "ceniks",
+    "displayName": "Ceník Služeb",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nazevSluzby": {
+      "type": "string",
+      "required": true
+    },
+    "formaSluzby": {
+      "type": "string",
+      "required": true
+    },
+    "cenaSluzby": {
+      "type": "string",
+      "required": true
+    },
+    "PodminkySluzeb": {
+      "type": "component",
+      "repeatable": false,
+      "component": "popis.popis"
+    },
+    "popisSluzby": {
+      "type": "text"
+    }
+  }
+}
