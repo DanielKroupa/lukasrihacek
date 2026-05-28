@@ -10,7 +10,7 @@ Tato webová aplikace slouží jako moderní prezentační platforma pro Lukáš
 
 ---
 
-## 🧠 Funkce
+## Funkce
 
 - Prezentační obsah (o mně, nabídka služeb, ceník)
 - Možnost kontaktu prostřednictvím formuláře
@@ -19,31 +19,29 @@ Tato webová aplikace slouží jako moderní prezentační platforma pro Lukáš
 
 ---
 
-## 🛠 Použité technologie
+## Použité technologie
 
 ### Frontend
 
 - [Next.js](https://nextjs.org/)
 - [React](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- HTML5
 
 ### Backend
 
 - [Strapi CMS](https://strapi.io/) – headless CMS pro správu obsahu
 - REST API
-
 ---
 
-## 🚀 Spuštění projektu lokálně
+## Spuštění projektu lokálně
 
-### 🔧 Požadavky
+### Požadavky
 
 - Node.js (doporučeno 18+)
 - Yarn nebo npm
 - Git
 
-### 📁 Struktura
+### Struktura
 
 /projekt/
 ├── frontend/
